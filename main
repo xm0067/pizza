@@ -1,5 +1,38 @@
-#include <iostream> 
+#include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
-int main(){
 
+struct Topping {
+    string code;
+    string name;
+    int amount;
+};
+
+struct Pizza{
+    string crustCode;
+    string sauceCode;
+    int sauceAmount;
+    vector<Topping> toppings;
+};
+
+vector<pair<string,string>>crustOptions = {
+    {"1a","Regular crust"},
+    {"2a","Gluten free crust"}
+};
+
+vector<pair<string,string>>sauceOptions ={
+    {"1b","Red sauce"},
+    {"2b","No red sauce"}
+};
+
+vector<pair<string,string>>toppingOptions ={
+    {"3a", "Pizza cheese"},
+    {"3b", "Diced onion"},
+    {"3c", "Green pepper"},
+};
+
+
+int main(){
+cout << "Testing if this works";
 }
